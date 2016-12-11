@@ -7,7 +7,7 @@ import { Person } from "./person";
 @Injectable()
 export class PostService {
 
-    private url = "http://localhost:8080/artifact-1.0-SNAPSHOT/rest/hello";
+    private url = "/rest/hello";
 
     constructor(private http: Http) {
     }

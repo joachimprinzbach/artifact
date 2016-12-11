@@ -20,6 +20,9 @@ module.exports = webpackMerge(commonConfig, {
     devServer: {
         historyApiFallback: true,
         stats: 'errors-only',
-        port: 8090
+        port: 8090,
+        proxy: {
+            "/rest": "http://localhost:8080/artifact-1.0-SNAPSHOT"
+        }
     }
 });
